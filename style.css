@@ -1,0 +1,112 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400; /* you can adjust the weight as needed */
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"); /* Or use a local font file path */
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: #05051f;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+/*  */
+
+.main-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8rem;
+  position: relative;
+}
+
+.main-content-wrapper {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.city-wrap {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+#weatherDegree {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.blur {
+  width: 50.125rem;
+  height: 50.3125rem;
+  border-radius: 1000rem;
+  background: linear-gradient(180deg, #0082ff 0%, #075f83 100%);
+  flex-shrink: 0;
+  filter: blur(111px);
+  position: absolute;
+  top: -10rem;
+  right: -15rem;
+}
+
+/* form */
+.search {
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: white;
+}
+
+button {
+  display: inline-flex;
+  padding: 0.5rem 2rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: white;
+}
